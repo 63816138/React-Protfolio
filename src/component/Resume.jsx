@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaHtml5,FaCss3,FaJs,FaReact,FaDatabase,FaNodeJs,FaInternetExplorer,FaFootball,FaBook,FaMusic,FaGamepad} from 'react-icons/fa6';
-import resume from '/home/mugesh_ruthvi/Documents/react_protfolio/protfolio/src/component/images/resume.pdf';
+import resume from './images/resume.pdf';
 
 const Resume = ({ image }) => {
   const whatsapp = '6381613806';

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderLogo from '/home/mugesh_ruthvi/Documents/react_protfolio/protfolio/src/component/images/image.png'; 
+import HeaderLogo from './images/image.png'; 
 import { Link } from 'react-router-dom';
  
 const Header = () => {

@@ -5,11 +5,11 @@ import Home from './component/Home.jsx';
 import Project from './component/Project.jsx';
 import Resume from './component/Resume.jsx';
 import Techstack from './component/Techstack.jsx';
-import profile from '/home/mugesh_ruthvi/Documents/react_protfolio/protfolio/src/component/images/photo.jpeg';
-import github from '/home/mugesh_ruthvi/Documents/react_protfolio/protfolio/src/component/images/github.png';
-import linkedin from '/home/mugesh_ruthvi/Documents/react_protfolio/protfolio/src/component/images/linkedin.png';
-import gmail from '/home/mugesh_ruthvi/Documents/react_protfolio/protfolio/src/component/images/gmail.png';
-import whatsapp from '/home/mugesh_ruthvi/Documents/react_protfolio/protfolio/src/component/images/whatsapp.png';
+import profile from './component/images/photo.jpeg';
+import github from './component/images/github.png';
+import linkedin from './component/images/linkedin.png';
+import gmail from './component/images/gmail.png';
+import whatsapp from './component/images/whatsapp.png';
 
 
 function App() {

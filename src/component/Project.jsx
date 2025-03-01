@@ -1,6 +1,6 @@
 import React from "react";
-import carrerHUB from '/home/mugesh_ruthvi/Documents/react_protfolio/protfolio/src/component/images/carrerHUB.jpeg';
-import resumeBuild from '/home/mugesh_ruthvi/Documents/react_protfolio/protfolio/src/component/images/resume_application.jpeg';
+import carrerHUB from './images/carrerHUB.jpeg';
+import resumeBuild from './images/resume_application.jpeg';
 
 const Project = () => {
   const projects = [

@@ -12,61 +12,68 @@ code {
     monospace;
 }
 
-.App{
+.App {
   width: 100vw;
   height: max-content;
   margin: 0;
   padding: 0;
   font-size: 16px;
-} 
+}
 
 /* The styles for Header in protfolio */
-.header{
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 4;
 }
 
-.header img{
+.header img {
   width: 200px;
   height: 75px;
-  padding:10px 0 0 20px;
+  padding: 10px 0 0 20px;
 }
 
-.nav_bar , .nav_list , li{
+.nav_bar,
+.nav_list,
+li {
   display: inherit;
   list-style: none;
   color: rgb(71, 71, 71);
   text-decoration: none;
 }
 
-.nav_bar li .nav_list{
+.nav_bar li .nav_list {
   padding: 10px 20px;
 }
 
-.nav_list:hover{
-  cursor:pointer;
+.nav_list:hover {
+  cursor: pointer;
   transform: scale(1.1);
   color: blueviolet;
   box-shadow: 1px 2px 5px blueviolet;
   border-radius: 20px;
 }
+
 /*The Home*/
 
-.home{
-  display:flex;
+.home {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   width: 100%;
   height: max-content;
   margin: 20px;
 }
 
-.home_intro{
+.home_intro {
   background-image: url('./component/images/backgroun.png');
-  background-position:left;
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   width: 90%;
@@ -74,17 +81,17 @@ code {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  align-items:start;
-  justify-content:center;
+  align-items: start;
+  justify-content: center;
 }
 
-.home_intro div{
+.home_intro div {
   margin-left: 10%;
   width: 40%;
   font-size: 0.9rem;
 }
 
-.home_intro div h1{
+.home_intro div h1 {
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid black;
@@ -93,7 +100,7 @@ code {
   color: rgb(100, 29, 167);
 }
 
-.home_intro div span button{
+.home_intro div span button {
   padding: 15px;
   border-radius: 10px;
   background-color: blueviolet;
@@ -103,27 +110,65 @@ code {
   margin: 10px 20px;
 }
 
-.home_intro div span button:hover{
+.home_intro div span button:hover {
   background-color: whitesmoke;
   color: blueviolet;
   box-shadow: 1px 1px 2px blueviolet;
 }
 
+.about_section {
+  width: 90%;
+  height: max-content;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.about_section p {
+  margin: 20px;
+  line-height: 1.5rem;
+}
+
+.educational_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.education {
+  position: absolute;
+  background-color: white;
+}
+
+.education svg {
+  width: 100px;
+  height: 100px;
+}
+
 /* Typing animation */
 @keyframes typing {
-  from { width: 0; }
-  to { width: 11ch; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 13ch;
+  }
 }
 
 /* Cursor blink animation */
 @keyframes blink {
-  from { border-right-color: black; }
-  to { border-right-color: transparent; }
+  from {
+    border-right-color: black;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
 }
 
 /* The Project Section */
 
-.project_section{
+.project_section {
   width: 100vw;
   height: max-content;
   display: flex;
@@ -131,7 +176,7 @@ code {
   align-items: center;
 }
 
-.project{
+.project {
   width: 80%;
   height: max-content;
   margin: 20px;
@@ -142,31 +187,32 @@ code {
   padding: 30px;
 }
 
-.project:hover{
+.project:hover {
   box-shadow: 2px 5px 10px blueviolet;
 }
 
-.project_details{
+.project_details {
   width: 100%;
 }
 
-.project_details h3{
+.project_details h3 {
   color: blueviolet;
 }
-.project_image{
+
+.project_image {
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   margin: 20px;
   border-radius: 10px;
 }
 
-.stack_list{
+.stack_list {
   display: flex;
   margin-left: 5px;
 }
 
-.stack_list li{
+.stack_list li {
   padding: 10px;
   background-color: blueviolet;
   margin: 10px;
@@ -174,27 +220,27 @@ code {
   color: whitesmoke;
 }
 
-.stack_list li:hover{
+.stack_list li:hover {
   background-color: whitesmoke;
   color: blueviolet;
   box-shadow: 1px 2px 2px blueviolet;
 }
 
-.button button{
+.button button {
   padding: 10px;
-  background-color:rgb(24, 78, 255);
+  background-color: rgb(24, 78, 255);
   margin: 10px;
   border-radius: 10px;
-  border:none;
+  border: none;
   color: whitesmoke;
 }
 
-.button button:hover{
+.button button:hover {
   transform: scale(1.1);
 }
 
 /* Resume Section */
-.resume_section{
+.resume_section {
   width: 100%;
   height: max-content;
   display: flex;
@@ -202,7 +248,8 @@ code {
   justify-content: space-evenly;
 
 }
-.contact{
+
+.contact {
   width: 25%;
   height: 70vh;
   display: flex;
@@ -213,12 +260,14 @@ code {
   border: none;
   box-shadow: 2px 4px 10px blueviolet;
 }
-.contact_download_button{
+
+.contact_download_button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contact_download_button button{
+
+.contact_download_button button {
   padding: 10px 20px;
   margin: 10px;
   border: none;
@@ -226,109 +275,126 @@ code {
   color: whitesmoke;
   border-radius: 10px;
 }
-.contact_download_button button:hover{
+
+.contact_download_button button:hover {
   background-color: whitesmoke;
   color: blueviolet;
   box-shadow: 1px 2px 5px blueviolet;
 }
-.contact img{
+
+.contact img {
   border-radius: 200px;
   width: 150px;
   height: 150px;
 }
-.contact_icon img:hover{
+
+.contact_icon img:hover {
   transform: scale(1.6);
 }
-.contact_nav{
-  display:flex;
+
+.contact_nav {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding-inline-start: 0;
 }
-.contact_nav li a img{
+
+.contact_nav li a img {
   width: 20px;
   height: 20px;
   margin: 10px;
 }
-.resume_about_section{
+
+.resume_about_section {
   width: 60%;
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 1;
 }
-.about{
+
+.about {
   margin: 5px 10px;
   width: 100%;
 }
 
-.resume_about_section div p{
+.resume_about_section div p {
   padding: 0 10px;
   line-height: 22px;
   font-size: 0.9rem;
 }
 
-.skills{
+.skills {
   width: 40%;
-  height:fit-content;
+  height: fit-content;
 }
-.skills ul{
+
+.skills ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 100%;
 }
-.skills ul h3{
+
+.skills ul h3 {
   width: 100%;
 }
-.skills ul li{
+
+.skills ul li {
   display: flex;
   align-items: center;
   width: 18vw;
 }
-.skills ul li div{
+
+.skills ul li div {
   width: 100%;
   border-radius: 10px;
   margin: 2.5px 10px;
 }
-.skills ul li div div{
+
+.skills ul li div div {
   background-color: blue;
   color: white;
   text-align: right;
   border-radius: 20px;
 }
-.hovered div div{
+
+.hovered div div {
   animation-name: percentage;
   animation-duration: 2s;
   animation-delay: 0;
-  animation-direction:normal;
+  animation-direction: normal;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: pointer;
 }
-.hobbies{
+
+.hobbies {
   width: 55%;
   height: 100%;
   height: max-content;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-evenly;
 }
-.hobbies ul{
+
+.hobbies ul {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  
+
 }
-.hobbies ul h3{
+
+.hobbies ul h3 {
   width: inherit;
 }
-.hobbies ul li{
+
+.hobbies ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,24 +402,37 @@ code {
   width: 50%;
   margin-top: 30px;
 }
-h3{
+
+h3 {
   border-bottom: 2px solid blueviolet;
 }
+
 @keyframes percentage {
-  from{
+  from {
     width: 0;
   }
-  to{
-    width:100%;
+
+  to {
+    width: 100%;
   }
 }
 
 /* The techstack Section */
-.stacks{
+.stack {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.stacks {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   perspective: 1000px;
+  margin: 30px;
 }
 
 .flip-card-inner {
@@ -363,28 +442,40 @@ h3{
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.flip-card-inner:hover .flip-card-inner {
+.stacks:hover .flip-card-inner,
+.flip-card-inner.flipped {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  box-shadow: 1px 2px 5px black;
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: #bbbbbb00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
 }
 
 .flip-card-back {
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 0.7rem;
+  height: fit-content;
 }
