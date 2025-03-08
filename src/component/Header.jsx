@@ -26,7 +26,7 @@ const Header = () => {
                         return <li 
                             key={index}
                         ><Link
-                            to={item.toLowerCase() === 'home' ? '/' : `/${item}`}
+                            to={item.toLowerCase() === 'home' ? '/React-Protfolio' : `/React-Protfolio/${item}`}
                             id={index}
                             onMouseEnter={(event)=>onenter(event)}
                             className='nav_list'

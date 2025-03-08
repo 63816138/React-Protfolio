@@ -24,12 +24,12 @@ function App() {
     <div className="App">
       <Header/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/projects' element={<Project/>}/>
-        <Route path='/resume' element={<Resume
+        <Route path='/React-Profolio' element={<Home/>}/>
+        <Route path='/React-Profolio/projects' element={<Project/>}/>
+        <Route path='/React-Profolio/resume' element={<Resume
           image = {image}
         />}/>
-        <Route path='/techstack' element={<Techstack/>}/>
+        <Route path='/React-Profolio/techstack' element={<Techstack/>}/>
       </Routes>
     </div>
   );
