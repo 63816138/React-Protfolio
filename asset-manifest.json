@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Protfolio/static/css/main.c58eaf23.css",
+    "main.js": "/React-Protfolio/static/js/main.28735120.js",
+    "static/media/resume.pdf": "/React-Protfolio/static/media/resume.b97771310f0929fe9c23.pdf",
+    "static/media/carrerHUB.jpeg": "/React-Protfolio/static/media/carrerHUB.b40aacfac9a629c8d606.jpeg",
+    "static/media/whatsapp.png": "/React-Protfolio/static/media/whatsapp.54200c241829e9d68abe.png",
+    "static/media/resume_application.jpeg": "/React-Protfolio/static/media/resume_application.016b7c5a0e520f38bc56.jpeg",
+    "static/media/linkedin.png": "/React-Protfolio/static/media/linkedin.a925b637ca18dca48d85.png",
+    "static/media/github.png": "/React-Protfolio/static/media/github.fa7b1db4f09e41b28015.png",
+    "static/media/photo.jpeg": "/React-Protfolio/static/media/photo.a7548fbf5a592df6bed4.jpeg",
+    "static/media/backgroun.png": "/React-Protfolio/static/media/backgroun.59b83f3dc57be3624dc6.png",
+    "static/media/image.png": "/React-Protfolio/static/media/image.784c26040ec12983bac1.png",
+    "index.html": "/React-Protfolio/index.html",
+    "main.c58eaf23.css.map": "/React-Protfolio/static/css/main.c58eaf23.css.map",
+    "main.28735120.js.map": "/React-Protfolio/static/js/main.28735120.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c58eaf23.css",
+    "static/js/main.28735120.js"
+  ]
+}
