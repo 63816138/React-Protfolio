@@ -13,7 +13,7 @@ code {
 }
 
 .App {
-  width: 100vw;
+  width: 97vw;
   height: max-content;
   margin: 0;
   padding: 0;
@@ -130,19 +130,72 @@ li {
 
 .educational_section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 80%;
   align-items: center;
+  
+}
+
+.education_display{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .education {
-  position: absolute;
-  background-color: white;
+  position: relative; 
+  margin-top: 40px;/* To position the pseudo-elements relative to the element */
+  padding: 30px; /* Optional, just for styling */
+  border: 2px solid transparent; /* We use transparent border to create space for the rotating effect */
 }
 
-.education svg {
-  width: 100px;
-  height: 100px;
+.education::before,
+.education::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  border: 2px solid transparent; /* Optional: gives rounded corners to the border */
 }
+
+.education::before {
+  border-image: linear-gradient(45deg, violet, indigo, blue, green, yellow) 1;
+  border-radius: 100px;
+  animation: rotateBorder 5s infinite linear; /* Apply animation for rotation */
+}
+
+.education::after {
+  border-image: linear-gradient(45deg, violet, indigo, blue, green, yellow) 1;
+  border-radius: 100px;
+  animation: rotateBorder 5s infinite reverse linear; /* Reverse the rotation for a different effect */
+}
+
+.education:hover{
+  perspective: 1000;
+  transform: scale3d(1.1);
+}
+
+/* Animation for rotating the borders */
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.education svg,.education_display svg {
+  width: 100px;
+  height: 100px; 
+}
+
 
 /* Typing animation */
 @keyframes typing {
@@ -163,6 +216,14 @@ li {
 
   to {
     border-right-color: transparent;
+  }
+}
+@keyframes border-rotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
   }
 }
 
